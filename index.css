@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100&display=swap');
+
+:root{
+    --background: #08073f;
+    --textcolor: #383838;
+    --circles: #7f8181;
+    --whitetext: #e2e2e2;
+
+}
+
+.back-to-home{
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    bottom: 1rem;
+    right: 10rem;
+    background-color: #ff8c00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-to-home:hover::after{
+    content: 'back to home';
+    position: absolute;
+    bottom: 2rem;
+    width: 8rem;
+    background-color:rgba(255, 153, 0, 0.74);
+    padding: 0.2rem 0.2rem;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    border-radius: 0.2rem;
+}
+
+.homer{
+    width: 0;
+    height: 0;
+    border-right: 0.7rem solid transparent;
+    border-left: 0.7rem solid transparent;
+    border-bottom: 0.7rem solid var(--background);
+}
+
+html{
+    scroll-behavior: smooth;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+body{
+    display: grid;
+    grid-template-rows: 1fr auto auto auto auto;
+    color: var(--textcolor);
+    font-family: 'Catamaran', sans-serif;
+    width: 90vw;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.inner-circle{
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--background);
+}
+
+.circle-one{
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--whitetext);
+    padding: 1rem;
+}
+
+.homeparagraphs{
+    padding-right: 1rem;
+}
+
+.homeparagraph1{
+    margin-bottom: 0%;
+    border-bottom: 2px #dee7e9 solid;
+    font-size: 2rem;
+    text-align: right;
+}
+
+.homeparagraph2{
+    padding-top: 0px;
+    margin-top: 0%;
+    text-align: right;
+    font-size: 1.5rem;
+    padding-bottom: 10%;
+}
+
+.links a{
+    color: var(--textcolor);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--whitetext);
+    line-height: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+}
+
+.social-links a{
+    color: var(--textcolor);
+    text-decoration: none;
+    padding-left: 2rem;
+    color: var(--whitetext);
+}
+
+.homeimg{
+    width: 90%;
+    height: auto;
+    border-radius: 50%;
+    border: 2px var(--textcolor) solid;
+}
+
+.blog-body{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 2rem;
+    column-gap: 1rem;
+    padding: 2rem;
+}
+
+.blog-item{
+    background-color: rgb(245, 245, 245);
+    position: relative;
+}
+
+.blog-item img{
+    width: 100%;
+    height: auto;
+    border: 2px var(--textcolor) solid;
+}
+
+.blog-item p{
+    padding: 1rem;
+    position: absolute;
+    left: 0.2rem;
+    bottom: 0rem;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.blog-item p a{
+    color: rgb(22, 12, 75);
+    font-family: monospace;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.home{
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    color: var(--whitetext);
+}
+
+.homeup{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.homedown{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 5%;
+    flex-wrap: nowrap;
+}
+
+.about{
+    border: 2px var(--circles) solid;
+    padding: 2rem;
+}
+
+.aboutimgbody{
+    padding-top: 3rem;
+    padding-left: 2rem;
+}
+
+.mg-1{
+    position: absolute;
+    left: 0.5rem;
+    font-weight: 800;
+}
+
+.aboutimg{
+    width: 90%;
+    height: auto;
+    border-radius: 50%;
+    border: 2px var(--textcolor) solid;
+}
+
+.about-body{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.aboutparagraph{
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+}
+
+.badge{
+    width: 15rem;
+    height: 15rem;
+    border: 1px var(--textcolor) solid;
+    position: relative;
+}
+
+.services-badges{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+.badge-img{
+    width: 100%;
+    height: auto;
+}
+
+.headings{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+.contact{
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    color: var(--whitetext);
+}
+
+.contact-body{
+    display: flex;
+    flex-direction: column;
+}
+
+.address{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.address-individual{
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.address-1{
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.address-individual p{
+    padding: 0%;
+    margin: 0%;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 10rem;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border: .2rem solid rgb(204, 203, 203);
+}
+
+.form-container input{
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 2rem;
+}
+
+.form-container textarea{
+    width: 25rem;
+    height: 6rem;
+    margin-bottom: 1rem;
+}
+
+.form-container button{
+    width: 25rem;
+    height: 2rem;
+    background-color: rgb(153, 48, 66);
+    border: none;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.links{
+    position: fixed;
+    width: 90vw;
+    height: 100vh;
+    background-color: #08073fea;
+    top: 0vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transform: translateY(100%);
+    transition: transform 1s ease;
+}
+
+.links-active{
+    transform: translateY(0%);
+}
+
+.hamburger{
+    border-radius: 0.3rem;
+    background-color: rgba(4, 0, 255, 0.74);
+    width: 3rem;
+    height: 1.8rem;
+    margin: 0px 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    position: fixed;
+    top: 1rem;
+    right: 5rem;
+    top: 2rem;
+    z-index: 2;
+}
+
+.hamburger:hover::after{
+    content: 'menu';
+    position: absolute;
+    right: 3rem;
+    background-color:rgba(4, 0, 255, 0.74);
+    padding: 0.2rem 0.2rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    border-radius: 0.2rem;
+}
+
+.line2-active{
+    display: none;
+}
+
+.line1.line3{
+    transform: rotate(0deg);
+    transition: all 1s ease;
+}
+
+.line1-active{
+    transform: rotate(45deg);
+    position: absolute;
+}
+
+.line3-active{
+    transform: rotate(-45deg);
+    position: absolute;
+}
+
+.line{
+    background-color: wheat;
+    width: 1.9rem;
+    height: 0.2rem;
+    border-radius: 5px;
+}
+
+.link{
+    opacity: 1;
+}
+
+.link-fade{
+    animation: linksFade 2s 1;
+}
+
+@keyframes linksFade{
+    from{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes linksFaded{
+    from{
+        opacity: 1;
+        transform: translateX(100%);
+    }
+    to{
+        opacity: 0;
+        transform: translateX(0%);
+    }
+}
+
+@media(max-width: 1200px){
+    .services-badges{
+        flex-wrap: wrap;
+    }
+    .badge{
+        margin-bottom: 2rem;
+    }
+}
+
+
+@media(max-width: 900px) {
+    .blog-body{
+        grid-template-columns: 1fr 1fr;
+    }
+    .blog-item p{
+        font-size: 0rem;
+    }
+    .blog-item a{
+        font-size: 1.5rem;
+    }
+    .about-body{
+        grid-template-columns: 4fr;
+    }
+    .aboutimg{
+        width: 5rem;
+        float: right;
+    }
+    .aboutparagraph{
+        font-size: 1.5rem;
+    }
+    .services-badges{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .badge{
+        margin-bottom: 0.9rem;
+        margin-left: 0.8rem;
+    }
+    .mg-1{
+        font-size: 1rem;
+        font-weight: 1000;
+    }
+    .address{
+        flex-direction: column;
+    }
+    .form-container label{
+        font-size: 1.2rem;
+    }
+    .bottom{
+        justify-content: space-between;
+        padding: 0rem;
+    }
+    .social-links a{
+        padding: 0.5rem;
+    }
+    .back-to-home{
+        right: 2rem;
+    }
+    .links a{
+        font-size: small;
+    }
+}
