@@ -216,6 +216,10 @@ body{
     font-weight: 600;
 }
 
+.aboutparagraph p{
+    text-align: justify;
+}
+
 .badge{
     width: 15rem;
     height: 15rem;
@@ -504,13 +508,6 @@ body{
         font-size: 1rem;
     }
 
-    /* .social-links a{
-        color: var(--textcolor);
-        text-decoration: none;
-        padding-left: 2rem;
-        color: var(--whitetext);
-    } */
-
     .homeimg{
         width: 50%;
         height: auto;
@@ -546,6 +543,7 @@ body{
 
     .aboutimg{
         width: 50%;
+        float: left;
     }
 
     .about-body{
@@ -562,6 +560,10 @@ body{
         font-weight: 400;
         width: 100vw;
         margin: 0px;
+    }
+
+    .aboutparagraph p{
+        max-width: 90%;
     }
 
     .services-badges{
